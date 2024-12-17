@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+
+}
+html,body{
+    width: 100%;
+    padding:0;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style:none;
+    background-color:  whitesmoke;
+    font-family: "Montserrat", serif;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    margin-right: 50px;
+    background-color: #1e1e1e;
+}
+nav img{
+    width: 100px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 25px;
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+
+}
+nav ul li{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 90px;
+}
+nav ul li a{
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    transition: 0.75s;
+    text-decoration: none;
+    margin-left: 25px;
+}
+nav ul li .dropdown li{
+    display: block;
+    width: 150px;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(252, 252, 252, 0.577);
+}
+nav ul li .dropdown{
+    top:90px;
+    width: 150px;
+    margin-left: 33px;
+    position: absolute;
+    height: 60px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 999;
+    display:none;
+}
+ul li .dropdown li a{
+    color: black;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    height: 100px;
+}
+.guides_goods{
+    color: gold;
+}
+ nav ul li a:hover{
+    color:gold;
+}
+ ul li:hover ul.dropdown {
+    margin-top: 0px;
+    position: fixed;
+    top:90px;
+    display: block;
+}
+ul .dropdown a:hover{
+    margin-top: 0px;
+}
+.coach_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.coach_container h1{
+    margin-top: 50px;
+    font-size: 70px;
+}
+.coaches{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    gap:20px;
+}
+.coach1 img, .coach2 img, .coach3 img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    margin: 10px;
+}
+.coach1, .coach2, .coach3{
+    width: 475px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 5px rgb(108, 108, 108);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.coach1:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+.coach2:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+.coach3:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+.coach_des{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: left;
+
+}
+.coach_des span{
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.coach_des ul li{
+    text-align: left;
+    display: inline;
+}
+.coach_des ul li a{
+    font-size: 25px;
+    color: black;
+}
+.ri-facebook-fill:hover, .ri-telegram-2-fill:hover{
+    color: #17A9FD;
+}
+.ri-instagram-line:hover{
+    color: #FD1D1D;
+}
+.ri-tiktok-fill:hover{
+    color: #FE2C55;
+}
+@media (max-width: 1024px) {
+    nav ul{
+        float: right;
+        margin-right: 50px;
+    }
+    .coach_container h1{
+        margin-top: 50px;
+        font-size: 60px;
+    }
+    .coaches{
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        gap:10px;
+    }
+    .coach1 img, .coach2 img, .coach3 img{
+        width: 170px;
+        height: 170px;
+        border-radius: 100px;
+        margin: 10px;
+    }
+    .coach1, .coach2, .coach3{
+        width: 475px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 5px rgb(108, 108, 108);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    
+}
+@media (max-width:768px) {
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li a{
+        color:white;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 7px 10px;
+        transition: 0.75s;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    .coach_container h1{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .coaches{
+        margin-top: 75px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+        gap:20px;
+    }
+    .coach1 img, .coach2 img, .coach3 img{
+        width: 170px;
+        height: 170px;
+        border-radius: 100px;
+        margin: 10px;
+    }
+    .coach1, .coach2, .coach3{
+        width: 475px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 5px rgb(108, 108, 108);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+    
+}
